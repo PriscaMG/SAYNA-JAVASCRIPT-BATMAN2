@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman DCLIC|Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./Assets/styles/main.css"/>
+</head>
+
+<body>
+    <div class="up-border"></div>
+    <div class="left-border2"></div>
+    <div class="right-border2"></div>
+
+    <main>
+    <!--Réseaux sociaux scroller-->
+    <div class="scroll">
+        <a href="game.html"><img  class="Jaune" src="./Assets/Logos/logo_bat_flèche.png" alt=""></a>
+        <img  class="social" src="./Assets/Logos/icon_facebook.png" alt="">
+        <img  class="social" src="./Assets/Logos/icon_ig.png" alt="">
+        <img  class="social" src="./Assets/Logos/icon_tw.png" alt="">
+        <a href="#footer"><img  class="Jaune" src="./Assets/Logos/logo_bat_flèche_2.png" alt=""></a>
+    </div>
+
+
+    <!--Première section Hero-game-->
+    <section id="Hero-game">
+        <header>
+            <nav class="container">
+            <a href="index.html"><img class="Jaune" src="./Assets/Logos/logohome.png" alt="Logo Batman"></a>
+            <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="game.html" class="active">Game</a></li>
+            </ul>
+            </nav>        
+         </header>
+    <div class="container">
+           <h2 class="titre">
+            Let’s play a <br> little game...
+           </h2>
+    </div>
+    <img class="flèche" src="./Assets/Logos/flèche_down_header.png" alt="Flèche vers en bas">
+    </section>
+
+    <!--Deuxième section démarrer-->
+        <section id="Start">
+                <h1>
+                    Connaissez vous bien le chevalier noir ?
+                </h1>
+                <img src="./assets/illustrations-game/Batgame_2.png" alt="Photo du Chevalier noir">
+                <button id="next-button">DÉMARRER LE QUIZ</button>
+               
+        </section>
+    
+    <!--Troisième section Game1-->
+        <section id="Game1">
+            <h1>1/15</h1>
+            <div class="container">
+                <img src="./assets/illustrations-game/Batgame_3.png" alt="">
+                <div class="quiz-content">
+                   <h3 id="question"></h3>
+                   <div id="choices">
+                    <input type="checkbox">
+                    <label for=""></label>
+                   </div>
+                   <div id="choices">
+                   <input type="checkbox">
+                   <label for=""></label>
+                   </div>
+                   <div id="choices">
+                   <input type="checkbox">
+                   <label for=""></label>
+                   </div>
+                </div>
+                <div id="notification"></div>
+            </div>
+            <button id="next-button">QUESTION SUIVANTE</button>
+        </section>
+
+    <footer id="footer">
+        <div class="container" class="left-border">
+            <div class="footer-text">
+                <img class="logo-wb" src="./Assets/Logos/icon_WB.png" alt="">
+                Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & 
+                    Snyder & Reeves
+            </div>
+            <div class="footer-logo">
+                <a href="#">
+                    <img class="logo-space1" src="./Assets/Logos/logo_sayna_white.png" alt="">
+                    <img class="logo-space2" src="./Assets/Logos/icon_x.png" alt="">
+                    <img class="logo-space1" src="./Assets/Logos/icon_DC.png" alt="">
+                </a>
+                <a href="#"><img class="logo-space3" src="./Assets/Logos/icon_facebook.png" alt=""></a>
+                <a href="#"><img class="logo-space3" src="./Assets/Logos/icon_ig.png" alt=""></a>
+                <a href="#"><img class="logo-space3" src="./Assets/Logos/icon_tw.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    
+      <script src="main.js"></script>
+    </body>
+</html>
+
