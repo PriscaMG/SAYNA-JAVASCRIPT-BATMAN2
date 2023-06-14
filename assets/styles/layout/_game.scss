@@ -65,6 +65,9 @@
     flex-direction: column;
     justify-content: center;
     .order{
+      font-weight: bold;
+      font-size: 40px;
+      font-family: "Rajdhani";
       text-transform: uppercase;
       margin-top: 90px;
       text-align: center;
@@ -72,7 +75,7 @@
     .quizzPart{
       display: flex;
       justify-content: center;
-      margin-top: 100px;
+      margin-top: 50px;
       margin-left: -110px;
       .quizzContent{
         display: flex;
@@ -87,30 +90,35 @@
           }
         .quizz-reponse{
           display: flex;
-          background-color: $white-light;
-          width: 500%;
+          flex-direction: column;
+          width: 500px;
           margin-top: 20px;
-          font-size: 20px;
-          font-weight: 400;
-          padding-top: 18px;
-          padding-bottom: 18px;
-          padding-left: 5px;
+          margin-left: 300px;
           .choice{
-            label{
+            background-color: $white-light;
+            margin-top: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px; 
+            .choice-label label{
             padding-left: 8px;
-            cursor: pointer
+            font-size: 20px;
+            font-weight: 400;
+            color: $white;
             }  
-            input{
-            width: 90px;
+            input[type="checkbox"]{
+            width: 120%;
+            height: 120%;
+            margin-left: -280px;
+            cursor: pointer;
             }
         }
       }
     }
+  }
       .controlResponses {
         color: red;
       }
-      .next-button button{
-        text-decoration: none;
+      .button button{
         color: $white;
         font-size: 18px;
         letter-spacing: 2px;
@@ -122,9 +130,12 @@
         margin-left: 500px;
         border: none;
         background: linear-gradient(130deg,#ffffff6d,#e17f2fe2);
+        cursor: pointer;
+        &:hover {
+          box-shadow:$white-light 0 0 20px;
+        }
       }
     }
-  }
 
   /* Popup de résultat */
  .overlay-game {

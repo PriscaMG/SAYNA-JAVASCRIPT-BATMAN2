@@ -610,6 +610,9 @@ button {
   justify-content: center;
 }
 .boxQuizz .order {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Rajdhani";
   text-transform: uppercase;
   margin-top: 90px;
   text-align: center;
@@ -617,7 +620,7 @@ button {
 .boxQuizz .quizzPart {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: -110px;
 }
 .boxQuizz .quizzPart .quizzContent {
@@ -634,27 +637,33 @@ button {
 }
 .boxQuizz .quizzPart .quizzContent .quizz-reponse {
   display: flex;
-  background-color: rgba(196, 196, 196, 0.5058823529);
-  width: 500%;
+  flex-direction: column;
+  width: 500px;
   margin-top: 20px;
+  margin-left: 300px;
+}
+.boxQuizz .quizzPart .quizzContent .quizz-reponse .choice {
+  background-color: rgba(196, 196, 196, 0.5058823529);
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.boxQuizz .quizzPart .quizzContent .quizz-reponse .choice .choice-label label {
+  padding-left: 8px;
   font-size: 20px;
   font-weight: 400;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 5px;
+  color: #ffffff;
 }
-.boxQuizz .quizzPart .quizzContent .quizz-reponse .choice label {
-  padding-left: 8px;
+.boxQuizz .quizzPart .quizzContent .quizz-reponse .choice input[type=checkbox] {
+  width: 120%;
+  height: 120%;
+  margin-left: -280px;
   cursor: pointer;
 }
-.boxQuizz .quizzPart .quizzContent .quizz-reponse .choice input {
-  width: 90px;
-}
-.boxQuizz .quizzPart .controlResponses {
+.boxQuizz .controlResponses {
   color: red;
 }
-.boxQuizz .quizzPart .next-button button {
-  text-decoration: none;
+.boxQuizz .button button {
   color: #ffffff;
   font-size: 18px;
   letter-spacing: 2px;
@@ -666,6 +675,10 @@ button {
   margin-left: 500px;
   border: none;
   background: linear-gradient(130deg, rgba(255, 255, 255, 0.4274509804), rgba(225, 127, 47, 0.8862745098));
+  cursor: pointer;
+}
+.boxQuizz .button button:hover {
+  box-shadow: rgba(196, 196, 196, 0.5058823529) 0 0 20px;
 }
 
 /* Popup de résultat */
