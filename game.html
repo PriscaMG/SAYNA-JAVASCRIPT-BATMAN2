@@ -46,39 +46,64 @@
     </section>
 
     <!--Deuxième section démarrer-->
-        <section id="Start">
+    <section>
+    <!--Partie START--> 
+        <div class="Start">
                 <h1>
                     Connaissez vous bien le chevalier noir ?
                 </h1>
-                <img src="./assets/illustrations-game/Batgame_2.png" alt="Photo du Chevalier noir">
-                <button id="next-button">DÉMARRER LE QUIZ</button>
-               
-        </section>
-    
-    <!--Troisième section Game1-->
-        <section id="Game1">
-            <h1>1/15</h1>
-            <div class="container">
-                <img src="./assets/illustrations-game/Batgame_3.png" alt="">
-                <div class="quiz-content">
-                   <h3 id="question"></h3>
-                   <div id="choices">
-                    <input type="checkbox">
-                    <label for=""></label>
-                   </div>
-                   <div id="choices">
-                   <input type="checkbox">
-                   <label for=""></label>
-                   </div>
-                   <div id="choices">
-                   <input type="checkbox">
-                   <label for=""></label>
-                   </div>
+                <div class="chevalier">
+                    <img src="./assets/illustrations-game/Batgame_2.png" alt="Photo du Chevalier noir">
                 </div>
-                <div id="notification"></div>
+                <div class="button-start">
+                    <a class="link-start" href="#boxQuizz">DÉMARRER LE QUIZ</a>
+                </div> 
+        </div>
+    <!--Partie QUIZZ--> 
+        <div id="boxQuizz" class="boxQuizz">
+            <div class="order">
+                <p><span class="order-question"></span> / <span class="total-question"></span></p>
             </div>
-            <button id="next-button">QUESTION SUIVANTE</button>
-        </section>
+            <div class="quizzPart">
+                <div class="illustration">
+                    <img src="">
+                </div>
+                <div class="quizzContent">
+                    <div class="quizz-question">
+                        <p></p>
+                    </div>
+                    <div class="quizz-reponse">
+                        <div class="choice">
+                            <input id="choice1" class="choice-radio" name="choice" type="checkbox">
+                            <label class="choice-label" for="choice1"></label>
+                        </div>
+                        <div class="choice">
+                            <input id="choice2" class="choice-radio" name="choice" type="checkbox">
+                            <label class="choice-label" for="choice2"></label>
+                        </div>
+                        <div class="choice">
+                            <input id="choice3" class="choice-radio" name="choice" type="checkbox">
+                            <label class="choice-label" for="choice3"></label>
+                        </div>
+                        <span class="controlResponses"></span>
+                    </div>
+                </div>
+            </div>
+                <div class="button">
+                    <span class="illustration-left"></span>
+                    <button class="next-button">QUESTION SUIVANTE</button>
+                    <span class="illustration-right"></span>
+                </div>
+        </div>
+            <div class="overlay-game">
+                <div class="popup">
+                    <h2 class="popup-note"></h2>
+                    <p class="popup-text"></p>
+                    <button class="restart">RECOMMENCER LE QUIZ</button>
+                </div>
+            </div>
+    </section>
+    </main>
 
     <footer id="footer">
         <div class="container" class="left-border">

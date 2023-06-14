@@ -25,7 +25,7 @@
   }
  }
 
-#Start{
+.Start{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,13 +35,14 @@
       margin-top: 90px;
       text-align: center;
     }
-    img{
+    .chevalier img{
       width: 92%;
       height: 90%;
       margin-left: 37px;
       margin-top: 30px;
+      margin-bottom: 70px;
     }
-    #next-button{
+    .button-start a{
       text-decoration: none;
       color: $white;
       font-size: 18px;
@@ -49,40 +50,42 @@
       font-weight: 200;
       font-family: "Rajdhani";
       padding: 20px 60px;
-      margin-top: 90px;
       width: 33%;
       margin-left: 310px;
       border: none;
       background: linear-gradient(130deg,#ffffff6d,#e17f2fe2);
+      &:hover {
+        box-shadow:$white-light 0 0 20px;
+      }
     }  
   }
   
-  #Game1{
+  .boxQuizz{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h1{
+    .order{
       text-transform: uppercase;
       margin-top: 90px;
       text-align: center;
     }
-    .container{
+    .quizzPart{
       display: flex;
       justify-content: center;
       margin-top: 100px;
       margin-left: -110px;
-      .quiz-content{
+      .quizzContent{
         display: flex;
         flex-direction: column;
         margin-top: 25px;
-        #question{
+        .quizz-question{
           font-weight: 300;
           font-family: "Rajdhani";
           font-size: 22px;
           margin-bottom: 20px;
           color: $grey;
           }
-        #choices{
+        .quizz-reponse{
           display: flex;
           background-color: $white-light;
           width: 500%;
@@ -92,16 +95,21 @@
           padding-top: 18px;
           padding-bottom: 18px;
           padding-left: 5px;
-          label{
+          .choice{
+            label{
             padding-left: 8px;
-          }
-          input{
+            cursor: pointer
+            }  
+            input{
             width: 90px;
-          }
+            }
         }
       }
     }
-      #next-button{
+      .controlResponses {
+        color: red;
+      }
+      .next-button button{
         text-decoration: none;
         color: $white;
         font-size: 18px;
@@ -116,7 +124,55 @@
         background: linear-gradient(130deg,#ffffff6d,#e17f2fe2);
       }
     }
+  }
+
+  /* Popup de résultat */
+ .overlay-game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.8);
+  z-index: 20;
+  display: none;
+  .popup {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+  padding: 80px;
+  background: linear-gradient(136deg, rgba(75, 49, 29, 0.4)0%, rgba(196, 133, 77, 0.4)100%), black;
+  border-radius: 30px;
+  border: 1px solid;
+  border-image: linear-gradient(to right, rgb(107, 107, 107)0%, rgba(49, 49, 49, 1)100%)1;
+  text-align: center;
+  margin: 60px 0;
+  .popup-note {
+    margin: 0;
+    text-decoration: underline;
+    letter-spacing: 2px;
+  }
+  .popup-text {
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+}
+}
+
+
+
+.popup * {
   
+}
+
+
+
+.popup .popup-texte {
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
 
 
 
