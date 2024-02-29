@@ -1,0 +1,219 @@
+@import '../base/color';
+@import '../base/typo';
+@import '../base/global';
+
+ /* Design section Hero*/ 
+ #Hero-game{
+  background-image: url(../illustrations-game/Batgame_1.png);
+  height: 900px;
+  width: 100%;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-color: $black;
+  .titre{
+      margin-top: 200px;
+      margin-left: 50px;
+      font-weight: bolder;
+      font-size: 50px;
+      font-family: "Rajdhani";
+      text-transform: uppercase;
+    }
+    .flèche{
+      display:block;
+      margin: 0 auto;
+      margin-top: 350px;
+  }
+ }
+
+.Start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 200px;
+    h1{
+      text-transform: uppercase;
+      margin-top: 90px;
+      text-align: center;
+    }
+    .chevalier img{
+      width: 92%;
+      height: 90%;
+      margin-left: 37px;
+      margin-top: 30px;
+      margin-bottom: 70px;
+    }
+    .button-start a{
+      text-decoration: none;
+      color: $white;
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 200;
+      font-family: "Rajdhani";
+      padding: 20px 60px;
+      width: 33%;
+      margin-left: 310px;
+      border: none;
+      background: linear-gradient(130deg,#ffffff6d,#e17f2fe2);
+      &:hover {
+        box-shadow:$white-light 0 0 20px;
+      }
+    }  
+  }
+  
+  .boxQuizz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .order{
+      font-weight: bold;
+      font-size: 40px;
+      font-family: "Rajdhani";
+      text-transform: uppercase;
+      margin-top: 90px;
+      text-align: center;
+    }
+    .quizzPart{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      margin-left: -110px;
+      .quizzContent{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        .quizz-question{
+          font-weight: 300;
+          font-family: "Rajdhani";
+          font-size: 22px;
+          margin-bottom: 20px;
+          color: $grey;
+          }
+        .quizz-reponse{
+          display: flex;
+          flex-direction: column;
+          width: 500px;
+          margin-top: 20px;
+          margin-left: 300px;
+          .choice{
+            background-color: $white-light;
+            margin-top: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px; 
+            .choice-label label{
+            padding-left: 8px;
+            font-size: 20px;
+            font-weight: 400;
+            color: $white;
+            }  
+            input[type="checkbox"]{
+            width: 120%;
+            height: 120%;
+            margin-left: -280px;
+            cursor: pointer;
+            }
+        }
+      }
+    }
+  }
+      .controlResponses {
+        color: red;
+      }
+      .button button{
+        color: $white;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 200;
+        font-family: "Rajdhani";
+        padding: 20px 75px;
+        margin-top: 50px;
+        width: 25%;
+        margin-left: 500px;
+        border: none;
+        background: linear-gradient(130deg,#ffffff6d,#e17f2fe2);
+        cursor: pointer;
+        &:hover {
+          box-shadow:$white-light 0 0 20px;
+        }
+      }
+    }
+
+  /* Popup de résultat */
+ .overlay-game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.8);
+  z-index: 20;
+  display: none;
+  .popup {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+  padding: 80px;
+  background: linear-gradient(136deg, rgba(75, 49, 29, 0.4)0%, rgba(196, 133, 77, 0.4)100%), black;
+  border-radius: 30px;
+  border: 1px solid;
+  border-image: linear-gradient(to right, rgb(107, 107, 107)0%, rgba(49, 49, 49, 1)100%)1;
+  text-align: center;
+  margin: 60px 0;
+  .popup-note {
+    margin: 0;
+    text-decoration: underline;
+    letter-spacing: 2px;
+  }
+  .popup-text {
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+}
+}
+
+.popup .popup-texte {
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left-border2{
+  border: solid 1px #bcbbbd4b;
+  height: 100%;
+  position: fixed;
+  right: 102px;
+}
+.right-border2{
+  border: solid 1px #bcbbbd4b;
+  height: 100%;
+  position: fixed;
+  left: 102px;
+}
+
+

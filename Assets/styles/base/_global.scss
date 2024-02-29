@@ -1,0 +1,40 @@
+@import './_color.scss';
+@import './_typo.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $black;
+    color: $white;
+    font-family: "Space Grotesk";
+    font-weight: 300;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: "Rajdhani";
+    font-size: 36px;
+    font-weight: 400;
+}
+
+button{
+    font-family: "Rajdhani";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+

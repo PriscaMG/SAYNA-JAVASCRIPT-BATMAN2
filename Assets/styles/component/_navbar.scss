@@ -1,0 +1,43 @@
+@import '../base/color';
+@import '../base/typo';
+@import '../base/global';
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    .Jaune:hover{
+        filter: invert(20%) sepia(100%) saturate(3196%) hue-rotate(356deg) brightness(107%) contrast(107%);
+     }
+    .Jaune{
+        margin-left: 40px;
+    }
+    ul{
+        display: flex;
+        li{
+            list-style-type: none;
+            a{
+                color: $white;
+                font-family: "Rajdhani";
+                font-size: 30px;
+                font-weight: 100;
+                margin-right: 40px;
+                text-decoration: none;
+                &:hover{
+                    color: $yellow;
+                 }
+                &.active{
+                    text-decoration: underline;
+                    font-weight: bold;
+                 }
+               }
+        }
+    }
+}
+    
+
+
+
+
+ 
