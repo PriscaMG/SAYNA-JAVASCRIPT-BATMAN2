@@ -7,33 +7,45 @@ footer{
     margin-top: 260px;
      .footer-text{
         text-align: center;
-        font-size: 12px;
+        font-size: var(--step--2);
         color: $white-light;
      }
 
      .footer-logo{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
          text-align: center;
          margin-top: 30px;
          img:hover{
          filter: invert(20%) sepia(100%) saturate(3196%) hue-rotate(356deg) brightness(107%) contrast(107%);
         }
-        .logo-space1{
-         margin: 10px;
-         margin-top: 30px;
-        }
         .logo-space2{
-         margin-bottom: 25px;
-         margin-top: 30px;
-        }
-        .logo-space3{
-         margin-top: 20px;
-         margin-left: 20px;
-         margin-right: 20px;
-         margin-bottom: 25px;
+         margin-bottom: 15px;
         }
      }    
 }
 
+@media screen and (max-width: 735px) {
+   .footer-logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+      margin-top: 30px;
+  }    
+}
+ 
+@media screen and (max-width: 670px) {
+   footer{
+      margin: 50px;
+}
+}
 
-
-
+@media screen and (max-width: 364px) {
+   .logo-space2{
+      margin-bottom: 0px;
+     }
+}

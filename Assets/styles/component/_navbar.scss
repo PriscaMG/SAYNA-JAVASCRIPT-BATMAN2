@@ -34,8 +34,63 @@ nav{
                }
         }
     }
+    .burger-menu{
+        display: none;
+    }
+
+    .burger-menu img{
+        width: 30px; 
+        cursor: pointer;
+    }
 }
-    
+
+
+.overlay1 {
+        height: 100%;
+        width: 0;
+        top: 0;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.404);
+        overflow-x: hidden;
+        transition: width 0.5s;
+        z-index: 1111; /* Assure que l'overlay est au-dessus de tout autre contenu */
+}
+
+
+@media screen and (max-width: 550px) {
+    nav{
+    ul{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    }
+
+    .overlay-nav-links {
+        display: block;
+        width: 100%;
+        margin: 100px;
+        li{
+            list-style-type: none;
+            a{
+                color: $white;
+                font-family: "Rajdhani";
+                font-size: 30px;
+                font-weight: 100;
+                margin-right: 40px;
+                text-decoration: none;
+                &:hover{
+                    color: $yellow;
+                 }
+                &.active{
+                    text-decoration: underline;
+                    font-weight: bold;
+                 }
+               }
+        } 
+    }
+}
 
 
 

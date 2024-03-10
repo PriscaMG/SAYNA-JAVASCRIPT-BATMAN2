@@ -1,5 +1,27 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const burger = document.querySelector('.burger-menu');
+  const overlay = document.querySelector('.overlay1');
+  const navLinks = document.querySelector('.overlay-nav-links');
+
+  burger.addEventListener('click', function() {
+    if (overlay.style.width === '100%') {
+      overlay.style.width = '0';
+    } else {
+      overlay.style.width = '100%';
+    }
+  });
+
+  overlay.addEventListener('click', function() {
+    overlay.style.width = '0';
+  });
+
+  navLinks.addEventListener('click', function(event) {
+    event.stopPropagation();
+  });
+});
+
 //const urlQuestion = "https://batman-api.sayna.space/questions";
-const urlQuestion = "../assets/json/urlquestion.js";
+const urlQuestion = "./Assets/json/urlquestion.js";
 
 // Recolte data API des questions et réponses
 fetch(urlQuestion)
@@ -12,7 +34,7 @@ fetch(urlQuestion)
 // Recolte data API des illustrations
 async function getDataImage() {
   try {
-    const urlImage = "../assets/json/urlimage.json";
+    const urlImage = "./Assets/json/urlimage.json";
     const reponse = await fetch(urlImage);
     const imageFile = await reponse.json();
     return imageFile;
@@ -33,8 +55,8 @@ const img = document.querySelector(".illustration img");
 const orderQuestion = document.querySelector(".order-question");
 const totalQuestion = document.querySelector(".total-question");
 const question = document.querySelector(".quizz-question p");
-const reponses = document.getElementsByClassName("choice-label");
-const radioChoice = document.getElementsByClassName("choice-radio");
+const reponses = document.getElementsByClassName(".choice-label");
+const radioChoice = document.getElementsByClassName(".choice-radio");
 const nextButton = document.querySelector(".next-button");
 const divButton = document.querySelector(".button");
 

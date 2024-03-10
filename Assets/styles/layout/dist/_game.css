@@ -1,0 +1,285 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Rajdhani";
+  scr: url(../Police/Rajdhani/Rajdhani-Bold.ttf);
+  src: url(../Police/Rajdhani/Rajdhani-Medium.ttf);
+  src: url(../Police/Rajdhani/Rajdhani-Regular.ttf);
+  src: url(../Police/Rajdhani/Rajdhani-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(../Police/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
+:root {
+  --step--2: clamp(0.6667rem, 0.8326rem + -0.2568vi, 0.7813rem);
+  --step--1: clamp(0.9375rem, 0.9095rem + 0.1401vi, 1rem);
+  --step-0: clamp(1.125rem, 0.9569rem + 0.8403vi, 1.5rem);
+  --step-1: clamp(1.35rem, 0.9466rem + 2.0168vi, 2.25rem);
+  --step-2: clamp(1.62rem, 0.8334rem + 3.9328vi, 3.375rem);
+  --step-3: clamp(1.944rem, 0.5464rem + 6.9882vi, 5.0625rem);
+  --step-4: clamp(2.3328rem, -0.025rem + 11.7892vi, 7.5938rem);
+  --step-5: clamp(2.7994rem, -1.0511rem + 19.2521vi, 11.3906rem);
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  scr: url(../Police/Rajdhani/Rajdhani-Bold.ttf);
+  src: url(../Police/Rajdhani/Rajdhani-Medium.ttf);
+  src: url(../Police/Rajdhani/Rajdhani-Regular.ttf);
+  src: url(../Police/Rajdhani/Rajdhani-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(../Police/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
+:root {
+  --step--2: clamp(0.6667rem, 0.8326rem + -0.2568vi, 0.7813rem);
+  --step--1: clamp(0.9375rem, 0.9095rem + 0.1401vi, 1rem);
+  --step-0: clamp(1.125rem, 0.9569rem + 0.8403vi, 1.5rem);
+  --step-1: clamp(1.35rem, 0.9466rem + 2.0168vi, 2.25rem);
+  --step-2: clamp(1.62rem, 0.8334rem + 3.9328vi, 3.375rem);
+  --step-3: clamp(1.944rem, 0.5464rem + 6.9882vi, 5.0625rem);
+  --step-4: clamp(2.3328rem, -0.025rem + 11.7892vi, 7.5938rem);
+  --step-5: clamp(2.7994rem, -1.0511rem + 19.2521vi, 11.3906rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Space Grotesk";
+  font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Rajdhani";
+  font-size: 36px;
+  font-weight: 400;
+}
+
+button {
+  font-family: "Rajdhani";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Design section Hero*/
+#Hero-game {
+  background-image: url(../illustrations-game/Batgame_1.png);
+  max-height: 900px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-color: #000000;
+}
+#Hero-game .titre {
+  margin-top: 200px;
+  margin-left: 50px;
+  font-weight: bolder;
+  font-size: var(--step-2);
+  font-family: "Rajdhani";
+  text-transform: uppercase;
+}
+#Hero-game .flèche {
+  display: block;
+  margin: 0 auto;
+  margin-top: 350px;
+}
+
+@media screen and (max-width: 910px) and (min-width: 500px) {
+  #Hero-game {
+    background-image: url(../illustrations-game/Batgame_1-2.png);
+  }
+}
+.Start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Start h1 {
+  text-transform: uppercase;
+  margin-top: 90px;
+  text-align: center;
+  font-size: var(--step-1);
+}
+.Start .chevalier img {
+  max-width: 100%;
+  max-width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.Start .button-start a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: var(--step--1);
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-family: "Rajdhani";
+  padding: 20px 60px;
+  width: 33%;
+  border: none;
+  background: linear-gradient(130deg, #ffffff6d, #e17f2fe2);
+}
+.Start .button-start a:hover {
+  box-shadow: #c4c4c481 0 0 20px;
+}
+
+@media screen and (max-width: 550px) {
+  #Hero-game .button-start a {
+    width: 25%;
+  }
+}
+.boxQuizz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.boxQuizz .order {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Rajdhani";
+  text-transform: uppercase;
+  margin-top: 90px;
+  text-align: center;
+}
+.boxQuizz .quizzPart {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: -110px;
+}
+.boxQuizz .quizzPart .quizzContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.boxQuizz .quizzPart .quizzContent .quizz-question {
+  font-weight: 300;
+  font-family: "Rajdhani";
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #ffffffa6;
+}
+.boxQuizz .quizzPart .quizzContent .quizz-reponse {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-top: 20px;
+  margin-left: 300px;
+}
+.boxQuizz .quizzPart .quizzContent .quizz-reponse .choice {
+  background-color: #c4c4c481;
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.boxQuizz .quizzPart .quizzContent .quizz-reponse .choice .choice-label label {
+  padding-left: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.boxQuizz .quizzPart .quizzContent .quizz-reponse .choice input[type=checkbox] {
+  width: 120%;
+  height: 120%;
+  margin-left: -280px;
+  cursor: pointer;
+}
+.boxQuizz .controlResponses {
+  color: red;
+}
+.boxQuizz .button button {
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-family: "Rajdhani";
+  padding: 20px 75px;
+  margin-top: 50px;
+  width: 25%;
+  margin-left: 500px;
+  border: none;
+  background: linear-gradient(130deg, #ffffff6d, #e17f2fe2);
+  cursor: pointer;
+}
+.boxQuizz .button button:hover {
+  box-shadow: #c4c4c481 0 0 20px;
+}
+
+/* Popup de résultat */
+.overlay-game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+  display: none;
+}
+.overlay-game .popup {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+  padding: 80px;
+  background: linear-gradient(136deg, rgba(75, 49, 29, 0.4) 0%, rgba(196, 133, 77, 0.4) 100%), black;
+  border-radius: 30px;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #6b6b6b 0%, #313131 100%) 1;
+  text-align: center;
+  margin: 60px 0;
+}
+.overlay-game .popup .popup-note {
+  margin: 0;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+.overlay-game .popup .popup-text {
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.popup .popup-texte {
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1115px) {
+  .upp-border {
+    display: none;
+  }
+
+  .right-border2 {
+    display: none;
+  }
+
+  .left-border2 {
+    display: none;
+  }
+}
+.left-border2 {
+  border: solid 1px #bcbbbd4b;
+  height: 100%;
+  position: fixed;
+  right: 102px;
+}
+
+.right-border2 {
+  border: solid 1px #bcbbbd4b;
+  height: 100%;
+  position: fixed;
+  left: 102px;
+}

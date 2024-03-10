@@ -11,3 +11,13 @@
     src: url(../Police/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
  }
 
+ :root {
+   --step--2: clamp(0.6667rem, 0.8326rem + -0.2568vi, 0.7813rem);
+   --step--1: clamp(0.9375rem, 0.9095rem + 0.1401vi, 1rem);
+   --step-0: clamp(1.125rem, 0.9569rem + 0.8403vi, 1.5rem);
+   --step-1: clamp(1.35rem, 0.9466rem + 2.0168vi, 2.25rem);
+   --step-2: clamp(1.62rem, 0.8334rem + 3.9328vi, 3.375rem);
+   --step-3: clamp(1.944rem, 0.5464rem + 6.9882vi, 5.0625rem);
+   --step-4: clamp(2.3328rem, -0.025rem + 11.7892vi, 7.5938rem);
+   --step-5: clamp(2.7994rem, -1.0511rem + 19.2521vi, 11.3906rem);
+ }

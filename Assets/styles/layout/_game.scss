@@ -5,8 +5,8 @@
  /* Design section Hero*/ 
  #Hero-game{
   background-image: url(../illustrations-game/Batgame_1.png);
-  height: 900px;
-  width: 100%;
+  max-height: 900px;
+  max-width: 100%;
   background-repeat: no-repeat;
   /*background-size: cover;*/
   background-color: $black;
@@ -14,7 +14,7 @@
       margin-top: 200px;
       margin-left: 50px;
       font-weight: bolder;
-      font-size: 50px;
+      font-size: var(--step-2);
       font-family: "Rajdhani";
       text-transform: uppercase;
     }
@@ -25,33 +25,38 @@
   }
  }
 
+ @media screen and (max-width: 910px) and (min-width: 500px) {
+  #Hero-game{
+    background-image: url(../illustrations-game/Batgame_1-2.png);
+   }
+ }
+
 .Start{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 50px 200px;
+    align-items: center;
     h1{
       text-transform: uppercase;
       margin-top: 90px;
       text-align: center;
+      font-size: var(--step-1);
     }
     .chevalier img{
-      width: 92%;
-      height: 90%;
-      margin-left: 37px;
+      max-width: 100%;
+      max-width: 100%;
       margin-top: 30px;
-      margin-bottom: 70px;
+      margin-bottom: 50px;
     }
     .button-start a{
       text-decoration: none;
       color: $white;
-      font-size: 18px;
+      font-size: var(--step--1);
       letter-spacing: 2px;
       font-weight: 200;
       font-family: "Rajdhani";
       padding: 20px 60px;
       width: 33%;
-      margin-left: 310px;
       border: none;
       background: linear-gradient(130deg,#ffffff6d,#e17f2fe2);
       &:hover {
@@ -59,6 +64,14 @@
       }
     }  
   }
+
+  @media screen and (max-width: 550px) {
+    #Hero-game{
+        .button-start a{
+          width: 25%;
+        } 
+  }
+}
   
   .boxQuizz{
     display: flex;
@@ -177,7 +190,17 @@
   line-height: 1.5;
 }
 
-
+@media screen and (max-width: 1115px)  {
+  .upp-border{
+      display: none;
+  }
+  .right-border2{
+      display: none;
+  }
+  .left-border2{
+      display: none;
+  }
+}
 
 
 
